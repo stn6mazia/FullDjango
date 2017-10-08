@@ -1,0 +1,17 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+    <head>
+        <meta  charset="UTF-8">
+        <title>FullDjango</title>
+    </head>
+    <body>
+        <h1>Detalhe Perfil: {{perfil.nome}}</h1>
+        <ul>    
+            <li>Nome: {{perfil.nome}}</li>
+            <li>Email: {{perfil.email}}</li>
+            <li>Telefone: {{perfil.telefone}}</li>
+            <li>Empresa: {{perfil.nome_empresa}}</li>
+        <ul>
+        <a href="{% url 'convidar' perfil.id %}">Convidar</a>
+    </body>
+</html>
